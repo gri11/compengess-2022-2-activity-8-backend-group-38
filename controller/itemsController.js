@@ -26,6 +26,9 @@ exports.getGroupMembers = async (req, res) => {
 // TODO #1.1: Get items from DynamoDB
 exports.getItems = async (req, res) => {
   // You should change the response below.
+  const params = {
+    TableName: process.env.item
+  }
   res.send("This route should get all items in DynamoDB.");
 };
 
